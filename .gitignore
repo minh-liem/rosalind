@@ -6,4 +6,4 @@ __pycache__/
 venv/
 
 # Windows metadata file
-Zone.Identifier
+data/*Zone.Identifier
