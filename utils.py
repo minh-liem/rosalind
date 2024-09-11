@@ -1,3 +1,4 @@
+# Funcs to load data
 def load_sequences(filepath: str):
     from Bio import SeqIO
     seqs = []
