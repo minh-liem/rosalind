@@ -18,5 +18,7 @@ def complementary_strand(string):
     reverse_complement = reverse_complement[::-1]
     return reverse_complement
     
-data = load_simple_string_from_text("data/revc.txt")
-print(complementary_strand(data))
+data = load_simple_string_from_text("in/revc.txt")
+
+with open("out/revc.txt", "w") as file:
+    file.write(complementary_strand(data))

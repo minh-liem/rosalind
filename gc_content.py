@@ -10,6 +10,9 @@ def highest_gc(seqs):
     return f"{seqs[max_index][0]}\n{round((max(gc_content)*100), 6)}"\
 
 
-data = load_sequences("data/gc_content.txt")
-print(highest_gc(data))
+data = load_sequences("in/gc_content.txt")
+result = highest_gc(data)
+
+with open("out/highest_gc.txt", "w") as file:
+    file.write(result)
 

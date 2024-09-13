@@ -7,5 +7,8 @@ def dna_to_rna(string):
     
     return string
 
-data = load_simple_string_from_text("data/rna.txt")
-print(dna_to_rna(data))
+data = load_simple_string_from_text("in/rna.txt")
+
+with open("out/rna.txt", "w") as file:
+    file.write(dna_to_rna(data))
+

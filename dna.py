@@ -1,5 +1,5 @@
 # Load data
-dna = open("data/dna.txt", "r").read()
+dna = open("in/dna.txt", "r").read()
 
 # Function to count nucleotide in a given dna string of order: A, C, G, T
 
@@ -18,7 +18,8 @@ def count_nucleotide(dna):
     
     return f'{nucleotide_count["A"]} {nucleotide_count["C"]} {nucleotide_count["G"]} {nucleotide_count["T"]}'
 
-print(count_nucleotide(dna))
+with open("out/dna.txt", "w") as file:
+    file.write(count_nucleotide(dna))
     
 
 
