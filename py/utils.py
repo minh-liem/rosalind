@@ -7,5 +7,6 @@ def load_sequences(filepath: str):
     return seqs
 
 def load_simple_string_from_text(filepath: str):
-    string = open(filepath, "r").read()
+    with open(filepath, "r") as file:
+        string = file.read().replace("\n", "")
     return string
