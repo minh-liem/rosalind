@@ -11,3 +11,4 @@ This repo serves three purposes:
 The project is organized as follows:
 - `in/`: input data from https://rosalind.info/problems/list-view/
 - `out/`: output of python codes running on corresponding input data
+- `py/`: python code to work with bioinformatics problems
