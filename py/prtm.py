@@ -4,7 +4,8 @@ from dictionaries import amino_acid_mass_table
 def protein_mass_calculator(sequence):
     mass = 0 
     for amino_acid in sequence:
-        mass += amino_acid_mass_table[amino_acid]
+        if amino_acid in amino_acid_mass_table:
+            mass += amino_acid_mass_table[amino_acid]
     
     return round(mass, 3)
 

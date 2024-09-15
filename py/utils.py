@@ -8,5 +8,5 @@ def load_sequences(filepath: str):
 
 def load_simple_string_from_text(filepath: str):
     with open(filepath, "r") as file:
-        string = file.read().replace("\n", "")
+        string = file.read()
     return string
