@@ -1,3 +1,4 @@
+# PROTEIN
 codon_to_amino_acid = {
     'UUU': 'F', 'UUC': 'F', 'UUA': 'L', 'UUG': 'L',
     'CUU': 'L', 'CUC': 'L', 'CUA': 'L', 'CUG': 'L',
@@ -41,4 +42,15 @@ amino_acid_mass_table = {
     'V': 99.06841,
     'W': 186.07931,
     'Y': 163.06333
+}
+
+##MENDELIAN INHERITANCE
+
+dominant_allele_offspring_probability = {
+    ('AA', 'AA') : (1, 0),
+    ('AA', 'Aa') : (1, 0),
+    ('AA', 'aa') : (1, 0),
+    ('Aa', 'Aa') : (0.75, 0.25),
+    ('Aa', 'aa') : (0.5, 0.5),
+    ('aa', 'aa') : (0, 1)
 }
