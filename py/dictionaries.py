@@ -45,7 +45,7 @@ amino_acid_mass_table = {
 }
 
 ##MENDELIAN INHERITANCE
-
+#Used: IPRB, IEV
 dominant_allele_offspring_probability = {
     ('AA', 'AA') : (1, 0),
     ('AA', 'Aa') : (1, 0),

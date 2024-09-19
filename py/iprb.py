@@ -30,10 +30,10 @@ def dominant_allele_probability(k, m, n):
 
 file_path = "in/iprb.txt"
 
-k, m, n = read_file_as_integers(file_path)
+data = read_file_as_integers(file_path)
 
 with open("out/iprb.txt", "w") as file:
-    file.write(dominant_allele_probability(k, m, n))
+    file.write(dominant_allele_probability(data[0], data[1], data[2]))
 
 
 
