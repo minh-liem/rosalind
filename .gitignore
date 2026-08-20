@@ -13,3 +13,6 @@ in/
 in/**
 out/
 out/**
+
+#Test stuff:
+test.py
