@@ -1,25 +1,20 @@
-# Load data
-dna = open("in/dna.txt", "r").read()
+import sys
 
-# Function to count nucleotide in a given dna string of order: A, C, G, T
+# Load data from argument
+with open(sys.argv[1], "r") as f:
+    dna = f.read()
 
+# Function to count nucleotides in order: A C G T
 def count_nucleotide(dna):
-    # Initialize dictionary
-    nucleotide_count = {
-        "A" : 0,
-        "C" : 0, 
-        "G" : 0,
-        "T" : 0
-    }
-
+    nucleotide_count = { "A": 0, "C": 0, "G": 0, "T": 0 }
     for nucleotide in dna:
         if nucleotide in nucleotide_count:
             nucleotide_count[nucleotide] += 1
-    
     return f'{nucleotide_count["A"]} {nucleotide_count["C"]} {nucleotide_count["G"]} {nucleotide_count["T"]}'
 
-with open("out/dna.txt", "w") as file:
-    file.write(count_nucleotide(dna))
+# Print result to stdout
+print(count_nucleotide(dna))
+
     
 
 

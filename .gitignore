@@ -7,3 +7,9 @@ venv/
 
 # Windows metadata file
 in/*Zone.Identifier
+
+#Input/Output dir:
+in/
+in/**
+out/
+out/**
